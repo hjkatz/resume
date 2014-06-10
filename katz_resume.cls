@@ -18,7 +18,7 @@
 \newcommand{\@webpage}{}
 
 \renewcommand{\author}[1]{\renewcommand{\@authorname}{#1}}
-\newcommand{\email}[1]{\urldef{\@email}{\url}{<#1>}}
+\newcommand{\email}[1]{\urldef{\@email}{\url}{#1}}
 \newcommand{\streetaddress}[1]{\renewcommand{\@streetaddress}{#1}}
 \newcommand{\citystatezip}[1]{\renewcommand{\@citystatezip}{#1}}
 \newcommand{\phone}[1]{\renewcommand{\@phone}{#1}}
@@ -27,7 +27,7 @@
 \newcommand{\mydot}{\hspace{1ex}\textbullet\hspace{1ex}}
 
 \renewcommand{\maketitle}{
-    \centerline{{\Huge \sc \@authorname}}
+    \centerline{{\Huge \textsc \@authorname}}
     \smallskip
     \centerline{{\@streetaddress}\mydot
                 {\@citystatezip}\mydot
@@ -35,20 +35,32 @@
     \centerline{{\@email}\mydot
                 {\@webpage}}
     \smallskip
-    \centerline{\small \sc (Reccomendations Available Upon Request)}
+    \centerline{\small \textsc (Reccomendations Available Upon Request)}
 }
 
 \titleformat{\section}
-  {\large\sc\bf\raggedright}
+  {\large\scshape}
   {}{0em}
   {}
   [\titlerule]
 
-
 \titleformat{\subsection}
-  {\large\scshape\raggedright}
+  {\large\scshape}
   {}{0em}
   {}
+
+
+\newcommand{\job}[5]{
+    \item[]{\textbf{#1}\ \textit{at #2} \hfill #3 \-- #4}\\#5
+}
+
+\newcommand{\school}[6]{
+    \item[]{\textbf{#1}\ (GPA\ #2) \hfill #3 \-- #4}\\#5 \hfill #6
+}
+
+\newcommand{\experience}[2]{
+    \item[]{\textbf{#1}\\#2}
+}
 
 \newcommand{\datedsection}[2]{%
   \section[#1]{#1 \hfill #2}%
@@ -58,7 +70,15 @@
   \subsection[#1]{#1 \hfill #2}%
 }
 
+\newenvironment{jobs}{\begin{itemize}}{\end{itemize}}
+
+\newenvironment{schools}{\begin{itemize}}{\end{itemize}}
+
+\newenvironment{projects}{\begin{itemize}}{\end{itemize}}
+
+\newenvironment{awards}{\begin{itemize}}{\end{itemize}}
+
 \newenvironment{skills}[1]
- {\NumTabs{#1}\inparaenum\let\latexitem\item
+ {\noindent\NumTabs{#1}\inparaenum\let\latexitem\item
   \def\item{\def\item{\tab\latexitem}\latexitem}}
  {\endinparaenum}

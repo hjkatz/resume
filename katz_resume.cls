@@ -4,11 +4,12 @@
 \LoadClass{article}
 
 \RequirePackage{titlesec}
-\RequirePackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\RequirePackage[left=0.5in,right=0.5in,top=0.25in,bottom=1in]{geometry}
 \RequirePackage{paralist}
 \RequirePackage{tabto}
 \RequirePackage{microtype}
 \RequirePackage{url}
+\RequirePackage{ifthen}
 
 \newcommand{\@authorname}{}
 \newcommand{\@email}{}
@@ -58,16 +59,16 @@
     \item[]{\textbf{#1}\ (GPA\ #2) \hfill #3 \-- #4}\\#5 \hfill #6
 }
 
+\newcommand{\project}[5]{
+    \item[]{\textbf{#1}\ \ifthenelse{\equal{#2}{}}{ }{(\ \url{#2}\ )} \hfill \textit{#3} \-- #4}\\#5
+}
+
+\newcommand{\award}[3]{
+    \item[]{\textbf{#1}\ (#2) \hfill \textit{#3}}
+}
+
 \newcommand{\experience}[2]{
     \item[]{\textbf{#1}\\#2}
-}
-
-\newcommand{\datedsection}[2]{%
-  \section[#1]{#1 \hfill #2}%
-}
-
-\newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{#1 \hfill #2}%
 }
 
 \newenvironment{jobs}{\begin{itemize}}{\end{itemize}}

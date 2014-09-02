@@ -36,7 +36,6 @@
     \centerline{{\@email}\mydot
                 {\@webpage}}
     \smallskip
-    \centerline{\small \textsc (Reccomendations Available Upon Request)}
 }
 
 \titleformat{\section}

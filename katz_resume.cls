@@ -1,10 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{katz_resume}[2014-06-09 Katz Resume Style v1]
+\ProvidesClass{katz_resume}[2014-09-02 Katz Resume Style]
 
 \LoadClass{article}
 
 \RequirePackage{titlesec}
-\RequirePackage[left=0.5in,right=0.5in,top=0.25in,bottom=1in]{geometry}
+\RequirePackage[left=0.4in,right=0.4in,top=0.25in,bottom=0.25in]{geometry}
 \RequirePackage{paralist}
 \RequirePackage{tabto}
 \RequirePackage{microtype}
@@ -50,8 +50,8 @@
   {}
 
 
-\newcommand{\job}[5]{
-    \item[]{\textbf{#1}\ \textit{at #2} \hfill #3 \-- #4}\\#5
+\newcommand{\job}[6]{
+    \item[]{\textbf{#1}\textit{ #2, #3} \hfill #4 \-- #5}\\#6
 }
 
 \newcommand{\school}[6]{
@@ -63,7 +63,7 @@
 }
 
 \newcommand{\award}[3]{
-    \item[]{\textbf{#1}\ (#2) \hfill \textit{#3}}
+    \item[]{\textbf{#1}\ \ifthenelse{\equal{#2}{}}{ }{(#2)} \hfill \textit{#3}}
 }
 
 \newcommand{\experience}[2]{

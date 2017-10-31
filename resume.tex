@@ -3,41 +3,91 @@
 
 \author{Harrison J Katz}
 \email{hjkatz03@gmail.com}
-\streetaddress{2316 Elmwood Dr. SE}
+\streetaddress{2316 Elmwood Dr.\ SE}
 \citystatezip{Atlanta, GA 30339}
 \phone{706.801.5289}
 \webpage{www.linkedin.com/in/harrisonkatz}
+\objective{Enthusiastically pursuing automation, higher code quality, and personal growth for expanding companies offering a variety of responcibilities and hats to wear}
 
 \begin{document}
 \maketitle
+\vspace{-0.7em}
+
+\section{Skills \& Tools}
+\begin{minipage}[t]{0.3333\textwidth}
+    \centering
+    \large{\bf Languages}
+
+    \medskip
+
+    \begin{tabular}{ll}
+        \skill{8}{8}{Bash}
+        \skill{5}{8}{\LaTeX}
+        \skill{8}{8}{Perl}
+        \skill{8}{8}{PHP}
+        \skill{6}{8}{PostgreSQL}
+        \skill{5}{8}{Python}
+        \skill{6}{8}{Ruby}
+    \end{tabular}
+\end{minipage}%
+\begin{minipage}[t]{0.3333\textwidth}
+    \centering
+    \large{\bf Tools}
+
+    \medskip
+
+    \begin{tabular}{ll}
+        \skill{6}{8}{Datadog}
+        \skill{8}{8}{Git}
+        \skill{6}{8}{JIRA}
+        \skill{5}{8}{Pagerduty}
+        \skill{5}{8}{SAML}
+        \skill{8}{8}{Vim}
+    \end{tabular}
+\end{minipage}%
+\begin{minipage}[t]{0.3333\textwidth}
+    \centering
+    \large{\bf Automation}
+
+    \medskip
+
+    \begin{tabular}{ll}
+        \skill{6}{8}{AWS}
+        \skill{4}{8}{CloudFormation}
+        \skill{2}{8}{Containers}
+        \skill{2}{8}{Google Cloud}
+        \skill{7}{8}{Linux / RHEL}
+        \skill{4}{8}{Puppet}
+    \end{tabular}
+\end{minipage}
 
 \section{Experience}
 \begin{jobs}
-    \job{Senior DevOps Engineer}{Nead Werx, Inc.}{Atlanta, GA}{Dec 2016}{Present}{Developer for internal devops, system administration, linux utility scripting, and systems integration.}
-    \job{Systems Engineer}{Nead Werx, Inc.}{Atlanta, GA}{May 2014}{Dec 2016}{Developer of special projects, linux system administration, DevOps, automation, and IT.}
-    \job{Junior Mobile Apps Developer}{Nead Werx, Inc.}{Atlanta, GA}{May 2012}{May 2014}{Developer for the Mobile App Team designing mobile applications for Android and the Web in collaboration with a team. (Co-op for 3 semesters and Part-Time for 1)}
-    \experience{Professionally Proficient Skills}{
-        \begin{skills}{6}
-            \item[] AWS
-            \item[] Bash
-            \item[] CentOS
-            \item[] Datadog
-            \item[] Git
-            \item[] HTML
-            \item[] Java
-            \item[] JavaScript
-            \item[] JSON
-            \item[] LaTeX
-            \item[] Perl
-            \item[] PHP
-            \item[] Puppet
-            \item[] Python
-            \item[] RHEL
-            \item[] Ruby
-            \item[] SQL
-            \item[] Vim
-        \end{skills}
-    }
+    \job{Senior DevOps Engineer}{Nead Werx, Inc.}{Atlanta, GA}{Dec 2016}{Present}
+    \begin{projects}
+        \project{Researched and developed a tool for importing AutoCAD DXF files into our data model using \semibold{Python}}
+        \project{Designed and implemented a fully autonomous scheduling system which replaces application level cronjobs and includes verbose error handling and debugging using \semibold{Perl}}
+        \project{Redesigned and implemented full systems into our core product such as Authentication, Session Management, User Messaging, and Asset Management using \semibold{PHP}}
+        \project{Architected, diagrammed, and implemented our product's network infrastructure for \semibold{AWS} and coordinated the move of our willing customers}
+        \project{Researched, orchestrated, and implemented a new \semibold{Git} workflow with a suite of commit hooks and ``the G script'' using \semibold{Bash}}
+        \project{Implemented and integrated services internally including \semibold{Datadog}, \semibold{Pagerduty}, \semibold{Lucidchart}, and \semibold{JIRA}}
+        \project{Developed a series of developer automation scripts, crons, and tools using \semibold{Ruby}}
+    \end{projects}
+    \job{Systems Engineer}{Nead Werx, Inc.}{Atlanta, GA}{May 2014}{Dec 2016}
+    \begin{projects}
+        \project{Built a home grown build tool system for our internal product using \semibold{Perl}}
+        \project{Researched and implemented a ``standard profile'' for developers' tools including \semibold{vim}, \semibold{bash}, and \semibold{git} using \semibold{Puppet}}
+        \project{Created a set of coding standards and integrated them into our commit and deploy process for \semibold{PHP}, \semibold{Perl}, and \semibold{Javascript}}
+        \project{Developed multiple crons to help automate \semibold{JIRA}, \semibold{Git}, and Tempo Timesheets workflows \semibold{using} Perl}
+        \project{Developed various cronjobs and system scripts for developers including reminders, cli tools, and site-reliability jobs \semibold{using} Bash}
+        \project{Researched and implemented a \semibold{SAML} based authentication system for our product using \semibold{PHP}}
+    \end{projects}
+    \job{Junior Mobile Apps Developer}{Nead Werx, Inc.}{Atlanta, GA}{May 2012}{May 2014}
+    \begin{projects}
+        \project{Designed, engineered, and developed a mobile application for event voting and coordination called VoMeGo using Android}
+        \project{Responsible for the redesign and development of a FreshBooks mobile application called Nead Money using Android}
+        \project{Helped develop a mobile web-based rating application for the Georgia Aquariam called Critiquestr using \semibold{PHP}}
+    \end{projects}
 \end{jobs}
 
 \section{Education}
@@ -45,16 +95,6 @@
     \school{Georgia Institute of Technology}{3.65}{Aug 2011}{May 2015}{Bachelors of Computer Science in CS Theory and AI}{Atlanta, GA}
     \school{University of Georgia Dual Enrollment}{3.5}{Aug 2010}{May 2011}{Completed Coursework in CS}{Athens, GA}
 \end{schools}
-
-
-\section{Projects \& Research}
-\begin{projects}
-    \project{Donation Tracker}{}{Georgia Tech Senior Design}{Dec 2014}{My senior design project for Georgia Tech involved creating a donation tracking and management website for non-profit organizations. This project had me coordinating and leading a team of 5 students in the development of this website. This project made extensive use of HTML, PHP, Javascript, PostgreSQL and the project tracking site JIRA.}
-    \project{Nead Money}{http://www.neadmoney.com}{Nead Werx, Inc.}{Jan 2013}{Nead Money is an Android application made under the direction and collaboration with a team leader to allow Freshbooks' users to edit and view their financial account. This project involved multiple API integration including Freshbook's and Twitter's.}
-    \project{Critiquestr}{http://www.critiquestr.com}{Nead Werx, Inc.}{Jul 2012}{This is a critiquing app for wine and beer festivals created for the Georgia Aquarium's ``Red, White \& Brew'' beer festival. It is written in HTML with Jquery, Javascript, and PHP. This project involved the cooperation and coordination between 3 different areas of development: Back-end, Middleware, and Front-end.}
-    \project{Eagle Scout Project}{}{Troop 537\ in Bogart, GA}{Jun 2010}{Developed and facilitated a 100+ hours project to improve the running trails at North Oconee High School (NOHS). This project involved me leading over 70 people during multiple work days. The project included measuring, mapping, labeling, and marking the trails, as well as installing a Message Center (with a place for announcements and a large map with the mileage and trails marked and named) at the main entrance.}
-    \project{AmigoBot Research}{http://www.cs.uga.edu/directory/prashant-doshi}{UGA Young DAWGS}{Dec 2010}{In collaboration with Dr. Prashant Doshi of the University of Georgia, I researched various localization strategies and map planning algorithms for the AmigoBot platform utilizing the C++ and Java languages.}
-\end{projects}
 
 \section{Honors, Awards, \& Certifications}
 \begin{awards}

@@ -43,7 +43,7 @@
 \medskip
 \footnotesize{\@objective}
 \end{minipage}
-\hfill\vline\hfill
+%\hfill\vline\hfill
 \begin{minipage}{0.32\textwidth}
 
 \hfill\@webpage

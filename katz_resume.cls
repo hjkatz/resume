@@ -76,7 +76,7 @@
 }
 
 \newcommand{\school}[6]{
-    \item[]{\textbf{#1}\ (GPA\ #2) \hfill #3 \-- #4}\\#5 \hfill #6
+    \item[]{\textbf{#1}\ (GPA\ #2) \hfill #3 \-- #4}\\{\footnotesize#5} \hfill #6
 }
 
 \newcommand{\project}[1]{

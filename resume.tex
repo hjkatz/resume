@@ -3,11 +3,12 @@
 
 \author{Harrison J Katz}
 \email{hjkatz03@gmail.com}
-\streetaddress{2316 Elmwood Dr.\ SE}
-\citystatezip{Atlanta, GA 30339}
+% \streetaddress{227 Sullivan St}
+% \citystatezip{Atlanta, GA 30339}
 \phone{706.801.5289}
-\webpage{www.linkedin.com/in/harrisonkatz}
-\objective{Enthusiastically pursuing automation, higher code quality, and personal growth for an expanding company offering a variety of responsibilities and hats to wear}
+\linkedin{www.linkedin.com/in/harrisonkatz}
+\github{github.com/hjkatz}
+\objective{Enthusiastically pursuing automation, exceptional code quality, and infrastructure reliability}
 
 \begin{document}
 \maketitle
@@ -21,13 +22,13 @@
     \medskip
 
     \begin{tabular}{ll}
-        \skill{8}{8}{Perl}
+        \skill{8}{8}{Golang}
         \skill{8}{8}{Bash}
-        \skill{8}{8}{PHP}
         \skill{6}{8}{Ruby}
-        \skill{6}{8}{PostgreSQL}
         \skill{5}{8}{Python}
         \skill{5}{8}{\LaTeX}
+        \skill{4}{8}{PHP}
+        \skill{4}{8}{Perl}
     \end{tabular}
 \end{minipage}%
 \begin{minipage}[t]{0.3333\textwidth}
@@ -39,10 +40,11 @@
     \begin{tabular}{ll}
         \skill{8}{8}{Git}
         \skill{8}{8}{Vim}
-        \skill{6}{8}{Datadog}
-        \skill{6}{8}{JIRA}
+        \skill{7}{8}{Docker}
+        \skill{6}{8}{Prometheus}
+        \skill{6}{8}{Drone}
+        \skill{5}{8}{JIRA}
         \skill{5}{8}{Pagerduty}
-        \skill{5}{8}{SAML}
     \end{tabular}
 \end{minipage}%
 \begin{minipage}[t]{0.3333\textwidth}
@@ -52,54 +54,67 @@
     \medskip
 
     \begin{tabular}{ll}
+        \skill{8}{8}{Kubernetes}
         \skill{7}{8}{Linux / RHEL}
+        \skill{6}{8}{Google Cloud}
         \skill{6}{8}{AWS}
-        \skill{4}{8}{Puppet}
-        \skill{4}{8}{CloudFormation}
-        \skill{2}{8}{Containers}
-        \skill{2}{8}{Google Cloud}
+        \skill{5}{8}{VMWare}
+        \skill{4}{8}{Ansible}
+        \skill{3}{8}{Terraform}
     \end{tabular}
 \end{minipage}
 
 \section{Experience}
 \begin{jobs}
-    \job{Senior DevOps Engineer}{Nead Werx, Inc.}{Atlanta, GA}{Dec 2016}{Present}
+    \job{Senior Site Reliability Engineer}{Squarespace}{NY, NY}{Jan 2018}{Present}
     \begin{projects}
-        \project{Architected, diagrammed, and implemented our product's network infrastructure for \semibold{AWS} and coordinated the move of our willing customers}
+        \project{Onboarded the first team at Squarespace onto \semibold{GCP} and coordinated the cloud adoption efforts throughout the infrastructure org with documentation, runbooks, monitoring \& alerting practices, training efforts, and working with Google directly}
+        \project{Engineered the architecture for a fully reliable multi-service media processesing pipeline running on \semibold{Google Cloud} using services such as \semibold{GKE}, \semibold{GCS}, and \semibold{CLB}}
+        \project{Integrated the on-premises data center VMs and \semibold{Kubernetes} cluster networking into a fully private and connected service mesh}
+        \project{Shipped a templating and deployment tool for \semibold{Kubernetes} and \semibold{Helm} to help developers more reliably deploy services while following best practices}
+        \project{Developed best practices for running applications in \semibold{Kubernetes} including templating, secrets handling, deployment automation, and networking for ingresses and services}
+        \project{Led an organizational effort to upgrade the \semibold{Ansible} inventory and infrastructure across all teams}
+        \project{Developed a standardized documentation tool for all teams to use that converted markdown to Confluence as a \semibold{Drone} plugin}
+        \project{Re-engineered the local developer experience for product teams into an automated set up process with \semibold{Ansible}}
+    \end{projects}
+    \job{Senior DevOps Engineer}{Nead Werx, Inc.}{Atlanta, GA}{Dec 2016}{Jan 2018}
+    \begin{projects}
+        % \project{Architected, diagrammed, and implemented our product's network infrastructure for \semibold{AWS} and coordinated the move of our willing customers}
         \project{Orchestrated and administered 25+ \semibold{CentOS Linux} servers across different cloud environments}
         \project{Designed and implemented a fully autonomous scheduling system which replaces application level cronjobs and includes verbose error handling and debugging using \semibold{Perl}}
         \project{Redesigned and implemented full systems into our core product such as Authentication, Session Management, User Messaging, and Asset Management using \semibold{PHP}}
-        \project{Researched and developed a tool for importing AutoCAD DXF files into our data model using \semibold{Python}}
-        \project{Researched, orchestrated, and implemented a new \semibold{Git} workflow with a suite of commit hooks and ``the G script'' using \semibold{Bash}}
+        % \project{Researched and developed a tool for importing AutoCAD DXF files into our data model using \semibold{Python}}
+        % \project{Researched, orchestrated, and implemented a new \semibold{Git} workflow with a suite of commit hooks and ``the G script'' using \semibold{Bash}}
         \project{Implemented and integrated services internally including \semibold{Datadog}, \semibold{Pagerduty}, \semibold{Lucidchart}, and \semibold{JIRA}}
         \project{Developed a series of developer automation scripts, crons, and tools using \semibold{Ruby}}
     \end{projects}
     \job{Systems Engineer}{Nead Werx, Inc.}{Atlanta, GA}{May 2014}{Dec 2016}
     \begin{projects}
-        \project{Built a home grown build tool system for our internal product using \semibold{Perl}}
-        \project{Researched and implemented a ``standard profile'' for developers' tools including \semibold{vim}, \semibold{bash}, and \semibold{git} using \semibold{Puppet}}
+        % \project{Built a home grown build tool system for our internal product using \semibold{Perl}}
+        % \project{Researched and implemented a ``standard profile'' for developers' tools including \semibold{vim}, \semibold{bash}, and \semibold{git} using \semibold{Puppet}}
         \project{Created a set of coding standards and integrated them into our commit and deploy process for \semibold{PHP}, \semibold{Perl}, and \semibold{Javascript}}
-        \project{Developed multiple crons to help automate \semibold{JIRA}, \semibold{Git}, and Tempo Timesheets workflows \semibold{using} Perl}
+        % \project{Developed multiple crons to help automate \semibold{JIRA}, \semibold{Git}, and Tempo Timesheets workflows \semibold{using} Perl}
         \project{Developed various cronjobs and system scripts for developers including reminders, cli tools, and site-reliability jobs \semibold{using} Bash}
-        \project{Researched and implemented a \semibold{SAML} based authentication system for our product using \semibold{PHP}}
+        % \project{Researched and implemented a \semibold{SAML} based authentication system for our product using \semibold{PHP}}
     \end{projects}
-    \job{Junior Mobile Apps Developer}{Nead Werx, Inc.}{Atlanta, GA}{May 2012}{May 2014}
-    \begin{projects}
-        \project{Responsible for the redesign and development of a FreshBooks mobile application called Nead Money using Android}
-        \project{Helped develop a mobile web-based rating application for the Georgia Aquarium called Critiquestr using \semibold{PHP}}
-    \end{projects}
+    % \job{Junior Mobile Apps Developer}{Nead Werx, Inc.}{Atlanta, GA}{May 2012}{May 2014}
+    % \begin{projects}
+    %     \project{Responsible for the redesign and development of a FreshBooks mobile application called Nead Money using Android}
+    %     \project{Helped develop a mobile web-based rating application for the Georgia Aquarium called Critiquestr using \semibold{PHP}}
+    % \end{projects}
 \end{jobs}
 
 \section{Education}
 \begin{schools}
-    \school{Georgia Institute of Technology}{3.65}{Aug 2011}{May 2015}{Bachelors of Computer Science with Highest Honor in CS Theory and AI}{Atlanta, GA}
-    \school{University of Georgia Dual Enrollment}{3.5}{Aug 2010}{May 2011}{Completed Coursework in CS}{Athens, GA}
+    \school{Georgia Institute of Technology}{3.65}{Aug 2011}{May 2015}{Bachelors of Computer Science with Highest Honors in CS Theory and AI}{Atlanta, GA}
+    % \school{University of Georgia Dual Enrollment}{3.5}{Aug 2010}{May 2011}{Completed Coursework in CS}{Athens, GA}
 \end{schools}
 
 \section{Honors, Awards, \& Certifications}
 \begin{awards}
-    \award{Red Hat Certified Engineer}{RHEL 7}{Dec 2015}
+    \award{AWS Certified}{Developer - Associate}{Nov 2017}
     \award{Red Hat Certified System Administrator}{RHEL 7}{Oct 2015}
+    % \award{Red Hat Certified Engineer}{RHEL 7}{Dec 2015}
     \award{Eagle Scout Award}{BSA Highest Honor}{Jul 2010}
 \end{awards}
 

@@ -31,14 +31,15 @@
 \newcommand{\streetaddress}[1]{\renewcommand{\@streetaddress}{#1}}
 \newcommand{\citystatezip}[1]{\renewcommand{\@citystatezip}{#1}}
 \newcommand{\phone}[1]{\renewcommand{\@phone}{#1}}
-\newcommand{\webpage}[1]{\urldef{\@webpage}{\url}{#1}}
+\newcommand{\linkedin}[1]{\urldef{\@linkedin}{\url}{#1}}
+\newcommand{\github}[1]{\urldef{\@github}{\url}{#1}}
 \newcommand{\objective}[1]{\renewcommand{\@objective}{#1}}
 
 \newcommand{\mydot}{\hspace{1ex}\textbullet\hspace{1ex}}
 
 \renewcommand{\maketitle}{
 \begin{minipage}{0.62\textwidth}
-{\fontsize{36}{45} \textsc \@authorname}
+{\fontsize{38}{52} \textsc \@authorname}
 
 \medskip
 \footnotesize{\@objective}
@@ -46,15 +47,17 @@
 %\hfill\vline\hfill
 \begin{minipage}{0.32\textwidth}
 
-\hfill\@webpage
-
 \hfill\@email
 
 \hfill\@phone
 
-\hfill\@streetaddress
+\hfill\@github
 
-\hfill\@citystatezip
+\hfill\@linkedin
+
+%\hfill\@streetaddress
+
+%\hfill\@citystatezip
 
 \end{minipage}
 }

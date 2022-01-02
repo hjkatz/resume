@@ -6,7 +6,6 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{titlesec}
 \RequirePackage[left=0.25in,right=0.25in,top=0.25in,bottom=0.25in]{geometry}
-\RequirePackage{paralist}
 \RequirePackage{tabto}
 \RequirePackage{microtype}
 \RequirePackage{url}
@@ -17,6 +16,7 @@
 \RequirePackage{tabularx}
 \RequirePackage{enumitem}
 \RequirePackage{lmodern}
+\RequirePackage{multicol}
 
 \newcommand{\@authorname}{}
 \newcommand{\@email}{}
@@ -100,16 +100,24 @@
 }
 
 \newcommand{\award}[3]{
-    \item{\textbf{#1}\ \ifthenelse{\equal{#2}{}}{ }{(#2)} \hfill \textit{#3}}
+    \item{\small\textbf{#1}\ \ifthenelse{\equal{#2}{}}{ }(\small{#2})\hfill\textit{\small{#3}}}
 }
 
 \newenvironment{jobs}{\begin{itemize}[leftmargin=0.75em]}{\end{itemize}}
 
-\newenvironment{projects}{\begin{itemize}[leftmargin=*,labelindent=0.5em,labelsep=-0.3em,label=\tabitem]}{\end{itemize}}
+\newenvironment{projects}{\begin{itemize}[leftmargin=*,itemsep=0.35mm,leftmargin=*,labelindent=0.5em,labelsep=-0.3em,label=\tabitem]}{\end{itemize}}
 
 \newenvironment{schools}{\begin{itemize}[leftmargin=*,labelindent=0em]}{\end{itemize}}
 
-\newenvironment{awards}{\begin{itemize}}{\end{itemize}}
+\newenvironment{awards}{%
+    \setlength{\columnsep}{0mm}%
+    \setlength{\multicolsep}{0pt}%
+    \begin{multicols}{2}%
+    \begin{itemize}[itemsep=0.25mm]%
+}{%
+    \end{itemize}%
+    \end{multicols}%
+}
 
 \newcommand\rating[2]{%
     \ifnum#1>#2

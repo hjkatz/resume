@@ -5,7 +5,7 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage{titlesec}
-\RequirePackage[left=0.4in,right=0.4in,top=0.25in,bottom=0.25in]{geometry}
+\RequirePackage[left=0.25in,right=0.25in,top=0.25in,bottom=0.25in]{geometry}
 \RequirePackage{paralist}
 \RequirePackage{tabto}
 \RequirePackage{microtype}
@@ -62,15 +62,27 @@
 \end{minipage}
 }
 
+\titlespacing{\section}
+  {}%left
+  {0.85em}%before-sep
+  {0.65em}%after-sep
+
 \titleformat{\section}
   {\large\scshape}
-  {}{0em}
+  {}
+  {0em}
   {}
   [\titlerule]
 
+\titlespacing{\subsection}
+  {0.25em}%left
+  {0.15em}%before-sep
+  {0.15em}%after-sep
+
 \titleformat{\subsection}
   {\large\scshape}
-  {}{0em}
+  {}
+  {0em}
   {}
 
 
@@ -83,6 +95,7 @@
 }
 
 \newcommand{\project}[1]{
+    %\setlength{\itemindent}{-1.5em}
     \item{\small #1}
 }
 
@@ -90,11 +103,11 @@
     \item{\textbf{#1}\ \ifthenelse{\equal{#2}{}}{ }{(#2)} \hfill \textit{#3}}
 }
 
-\newenvironment{jobs}{\begin{itemize}}{\end{itemize}}
+\newenvironment{jobs}{\begin{itemize}[leftmargin=0.75em]}{\end{itemize}}
 
-\newenvironment{projects}{\begin{itemize}[leftmargin=*,label=\tabitem]}{\end{itemize}}
+\newenvironment{projects}{\begin{itemize}[leftmargin=*,labelindent=0.5em,labelsep=-0.3em,label=\tabitem]}{\end{itemize}}
 
-\newenvironment{schools}{\begin{itemize}}{\end{itemize}}
+\newenvironment{schools}{\begin{itemize}[leftmargin=*,labelindent=0em]}{\end{itemize}}
 
 \newenvironment{awards}{\begin{itemize}}{\end{itemize}}
 

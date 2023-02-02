@@ -12,14 +12,14 @@
 
 \begin{document}
 \maketitle
-\vspace{-0.7em}
+% \vspace{-0.05em}
 
 \section{Skills \& Tools}
 \begin{minipage}[t]{0.20\textwidth}
     \centering
     \large{\bf Languages}
 
-    \medskip
+    \smallskip
 
     \begin{tabular}{ll}
         \skill{8}{8}{Golang}
@@ -36,7 +36,7 @@
     \centering
     \large{\bf Passions}
 
-    \medskip
+    \smallskip
 
     \begin{tabular}{ll}
         \skill{8}{8}{Automation}
@@ -52,31 +52,37 @@
     \centering
     \large{\bf Tools}
 
-    \medskip
+    \smallskip
 
     \begin{tabular}{ll}
-        \skill{8}{8}{Git}
-        \skill{8}{8}{Vim}
         \skill{8}{8}{Prometheus}
-        \skill{6}{8}{Docker}
+        % \skill{8}{8}{Vim}
+        % \skill{7}{8}{Git}
+        \skill{6}{8}{DataDog}
         \skill{6}{8}{Ansible}
-        \skill{4}{8}{Terraform}
+        \skill{5}{8}{Terraform}
+        \skill{5}{8}{Rook/Ceph}
+        \skill{4}{8}{Consul}
+        % \skill{4}{8}{Vault}
+        % \skill{3}{8}{Vector}
+        % \skill{6}{8}{Docker}
         % \skill{3}{8}{PostgreSQL}
         % \skill{4}{8}{Redis}
+        % \skill{6}{8}{Drone}
     \end{tabular}
 \end{minipage}%
 \begin{minipage}[t]{0.25\textwidth}
     \centering
     \large{\bf Platforms}
 
-    \medskip
+    \smallskip
 
     \begin{tabular}{ll}
         \skill{8}{8}{Kubernetes}
         \skill{7}{8}{Linux}
         \skill{6}{8}{Google Cloud}
-        \skill{6}{8}{Drone}
-        \skill{5}{8}{JIRA}
+        \skill{6}{8}{Atlassian}
+        \skill{5}{8}{Hashicorp}
         \skill{4}{8}{AWS}
         % \skill{5}{8}{Pagerduty}
     \end{tabular}
@@ -86,7 +92,11 @@
 \begin{jobs}
     \job{Staff Site Reliability Engineer}{Gemini}{NYC, NY}{Mar 2022}{Present}
     \begin{projects}
-        \project{Facilitated the broad rollout of \semibold{DataDog} and \semibold{Vector} observability platform for \semibold{EC2 VMs} and \semibold{Kubernetes}}
+        \project{Adopted \semibold{DataDog} and \semibold{Vector} observability platform into Engineering for \semibold{AWS} and \semibold{Kubernetes} becoming a Subject Matter Expert}
+        \project{Implemented management strategies and best practices for \semibold{DataDog} API/App keys, Log Indexes and Archives, and Platform-wide Monitoring using \semibold{Terraform}, \semibold{Vault}, and \semibold{AWS S3}}
+        \project{Standardized inventory and environment terminology and observability tagging practices across Engineering}
+        \project{Engaged the Infrastructure Org improving on-call hygiene, incident response, \semibold{DataDog} monitoring best-practices, team policy documentation, and roadmapping strategies for teams}
+        \project{Documented, Improved, and Contributed to the ADR/Design Doc process for Infrastructure}
     \end{projects}
     \job{Senior Site Reliability Engineer}{Squarespace}{NYC, NY}{Jan 2018}{Mar 2022}
     \begin{projects}
@@ -99,7 +109,7 @@
         \project{Integrated the on-premises data center VMs and \semibold{Kubernetes} cluster networking into a fully private and connected service mesh}
         \project{Developed best practices for running applications in \semibold{Kubernetes} including templating, secrets handling, deployment automation, and networking for ingresses and services}
         \project{Led an organizational effort to upgrade the \semibold{Ansible} inventory and infrastructure across all infrastructure teams}
-        \project{Developed a standardized documentation tool for all teams to use that converted markdown to Confluence as a \semibold{Drone} plugin}
+        % \project{Developed a standardized documentation tool for all teams to use that converted markdown to Confluence as a \semibold{Drone} plugin}
         \project{Documented and maintained a standardized RFC/Design Doc process at Squarespace}
         % \project{Re-engineered the local developer experience for product teams into an automated set up process with \semibold{Ansible}}
     \end{projects}
@@ -108,14 +118,14 @@
         % \project{Architected, diagrammed, and implemented our product's network infrastructure for \semibold{AWS} and coordinated the move of our willing customers}
         \project{Orchestrated and administered 25+ \semibold{CentOS Linux} servers across different cloud environments}
         \project{Designed and implemented a fully autonomous scheduling system which replaces application level cronjobs and includes verbose error handling and debugging using \semibold{Perl}}
-        \project{Redesigned and implemented full systems into our core product such as Authentication, Session Management, User Messaging, and Asset Management using \semibold{PHP}}
+        % \project{Redesigned and implemented full systems into our core product such as Authentication, Session Management, User Messaging, and Asset Management using \semibold{PHP}}
         % \project{Researched and developed a tool for importing AutoCAD DXF files into our data model using \semibold{Python}}
         % \project{Researched, orchestrated, and implemented a new \semibold{Git} workflow with a suite of commit hooks and ``the G script'' using \semibold{Bash}}
         % \project{Implemented and integrated services internally including \semibold{Datadog}, \semibold{Pagerduty}, \semibold{Lucidchart}, and \semibold{JIRA}}
         % \project{Developed a series of developer automation scripts, crons, and tools using \semibold{Ruby}}
         % \project{Built a home grown build tool system for our internal product using \semibold{Perl}}
         % \project{Researched and implemented a ``standard profile'' for developers' tools including \semibold{vim}, \semibold{bash}, and \semibold{git} using \semibold{Puppet}}
-        \project{Created a set of coding standards and integrated them into our commit and deploy process for \semibold{PHP}, \semibold{Perl}, and \semibold{Javascript}}
+        % \project{Created a set of coding standards and integrated them into our commit and deploy process for \semibold{PHP}, \semibold{Perl}, and \semibold{Javascript}}
         % \project{Developed multiple crons to help automate \semibold{JIRA}, \semibold{Git}, and Tempo Timesheets workflows \semibold{using} Perl}
         \project{Developed various cronjobs and system scripts for developers including reminders, cli tools, and site-reliability jobs \semibold{using} Bash}
         % \project{Researched and implemented a \semibold{SAML} based authentication system for our product using \semibold{PHP}}

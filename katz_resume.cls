@@ -5,7 +5,7 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage{titlesec}
-\RequirePackage[left=0.25in,right=0.25in,top=0.25in,bottom=0.25in]{geometry}
+\RequirePackage[left=0.20in,right=0.20in,top=0.25in,bottom=0.20in]{geometry}
 \RequirePackage{tabto}
 \RequirePackage{microtype}
 \RequirePackage{url}
@@ -37,34 +37,37 @@
 
 \newcommand{\mydot}{\hspace{1ex}\textbullet\hspace{1ex}}
 
-\renewcommand{\maketitle}{
-\begin{minipage}{0.62\textwidth}
-{\fontsize{38}{52} \textsc \@authorname}
+\renewcommand{\maketitle}{%
+    \hspace{-0.75em}
+    \begin{minipage}{0.62\textwidth}{%
+        \fontsize{42}{56} \textsc \@authorname
+    }
 
-\medskip
-\footnotesize{\@objective}
-\end{minipage}
-%\hfill\vline\hfill
-\begin{minipage}{0.32\textwidth}
+    \smallskip
+    \hspace{0.09em}
+    \footnotesize{\@objective}
+    \end{minipage}
+    %\hfill\vline\hfill
+    \begin{minipage}{0.34\textwidth}
 
-\hfill\@email
+    \hfill\@email
 
-\hfill\@phone
+    \hfill\@phone
 
-\hfill\@github
+    \hfill\@github
 
-\hfill\@linkedin
+    \hfill\@linkedin
 
-%\hfill\@streetaddress
+    %\hfill\@streetaddress
 
-%\hfill\@citystatezip
+    %\hfill\@citystatezip
 
-\end{minipage}
+    \end{minipage}
 }
 
 \titlespacing{\section}
   {}%left
-  {0.85em}%before-sep
+  {0.25em}%before-sep
   {0.65em}%after-sep
 
 \titleformat{\section}
@@ -87,7 +90,8 @@
 
 
 \newcommand{\job}[5]{
-    \item[]{{\large \textbf{#1}}\textit{ #2, #3} \hfill #4 \-- #5}
+    \item[]{{\large \textbf{#1}}\textit{ #2, #3} \hfill #4 \-- #5}%
+    \vspace{-0.30em}
 }
 
 \newcommand{\school}[6]{
@@ -103,9 +107,9 @@
     \item{\small\textbf{#1}\ \ifthenelse{\equal{#2}{}}{ }(\small{#2})\hfill\textit{\small{#3}}}
 }
 
-\newenvironment{jobs}{\begin{itemize}[leftmargin=0.75em]}{\end{itemize}}
+\newenvironment{jobs}{\begin{itemize}[leftmargin=0.25em]}{\end{itemize}}
 
-\newenvironment{projects}{\begin{itemize}[leftmargin=*,itemsep=0.35mm,leftmargin=*,labelindent=0.5em,labelsep=-0.3em,label=\tabitem]}{\end{itemize}}
+\newenvironment{projects}{\begin{itemize}[leftmargin=*,itemsep=0.25mm,leftmargin=*,labelindent=0.15em,labelsep=-0.45em,label=\tabitem]}{\end{itemize}}
 
 \newenvironment{schools}{\begin{itemize}[leftmargin=*,labelindent=0em]}{\end{itemize}}
 

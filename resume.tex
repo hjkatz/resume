@@ -25,8 +25,9 @@
         \skill{8}{8}{Golang}
         \skill{8}{8}{Bash/CLI}
         \skill{8}{8}{Regex}
+        \skill{6}{8}{Typescript}
         \skill{4}{8}{Python}
-        \skill{3}{8}{Ruby}
+        % \skill{3}{8}{Ruby}
         \skill{3}{8}{\LaTeX}
         % \skill{4}{8}{PHP}
         % \skill{4}{8}{Perl}
@@ -41,9 +42,9 @@
     \begin{tabular}{ll}
         \skill{8}{8}{Automation}
         \skill{8}{8}{Documentation}
+        \skill{8}{8}{Observability}
         \skill{7}{8}{Knowledge Mapping}
-        \skill{6}{8}{Standards}
-        \skill{6}{8}{Best Practices}
+        \skill{6}{8}{Golden Paths}
         \skill{5}{8}{Consensus Building}
         % \skill{5}{8}{Correctness}
     \end{tabular}
@@ -58,12 +59,13 @@
         \skill{8}{8}{Prometheus}
         % \skill{8}{8}{Vim}
         % \skill{7}{8}{Git}
-        \skill{6}{8}{DataDog}
-        \skill{6}{8}{Ansible}
-        \skill{5}{8}{Terraform}
-        \skill{5}{8}{Rook/Ceph}
-        \skill{4}{8}{Consul}
-        % \skill{4}{8}{Vault}
+        \skill{7}{8}{DataDog}
+        \skill{6}{8}{Terraform}
+        \skill{5}{8}{Ansible}
+        \skill{5}{8}{Vault}
+        \skill{4}{8}{Bazel}
+        % \skill{4}{8}{Rook/Ceph}
+        % \skill{3}{8}{Consul}
         % \skill{3}{8}{Vector}
         % \skill{6}{8}{Docker}
         % \skill{3}{8}{PostgreSQL}
@@ -81,16 +83,24 @@
         \skill{8}{8}{Kubernetes}
         \skill{7}{8}{Linux}
         \skill{6}{8}{Google Cloud}
-        \skill{6}{8}{Atlassian}
-        \skill{5}{8}{Hashicorp}
-        \skill{4}{8}{AWS}
+        \skill{5}{8}{AWS}
+        \skill{6}{8}{Hashicorp}
+        \skill{5}{8}{Atlassian}
         % \skill{5}{8}{Pagerduty}
     \end{tabular}
 \end{minipage}
 
 \section{Experience}
 \begin{jobs}
-    \job{Staff Site Reliability Engineer}{Gemini}{NYC, NY}{Mar 2022}{Present}
+    \job{Senior Software Engineer}{ngrok}{NYC, Remote}{Apr 2023}{Present}
+    \begin{projects}
+        \project{Automated global \semibold{Kubernetes} upgrades and datacenter provisioning for 10+ environments into a repeatable documented process}
+        \project{Developed a singular \semibold{Go} CLI for all SDLC steps by all engineers including: local env management, deployments, code gen, infra ops, etc}
+        \project{Migrated static credentials to \semibold{Okta} SSO for \semibold{AWS}, DevBoxes, \semibold{Vault}, and \semibold{Kubernetes} for the entire company over a two-month period}
+        \project{Reduced onboarding time by 85\% via a new DevBox provisioning process with guides, automation, ephemerality, and golden paths}
+        \project{Migrated bespoke \semibold{Kubernetes} deploy/service configuration to \semibold{Helm} Chart management for 60+ services}
+    \end{projects}
+    \job{Staff Site Reliability Engineer}{Gemini}{NYC, NY}{Mar 2022}{Apr 2023}
     \begin{projects}
         \project{Adopted \semibold{DataDog} and \semibold{Vector} observability platform into Engineering for \semibold{AWS} and \semibold{Kubernetes} becoming a Subject Matter Expert}
         \project{Implemented management strategies and best practices for \semibold{DataDog} API/App keys, Log Indexes and Archives, and Platform-wide Monitoring using \semibold{Terraform}, \semibold{Vault}, and \semibold{AWS S3}}
@@ -107,29 +117,29 @@
         \project{Engineered the architecture for a fully reliable multi-service media processesing pipeline running on \semibold{Google Cloud} using services such as \semibold{GKE}, \semibold{GCS}, and \semibold{CLB} with tooling such as \semibold{Terraform}, \semibold{Drone CI/CD}, and \semibold{Docker}}
         \project{Developed and supported a templating and deployment tool for \semibold{Kubernetes} and \semibold{Helm} used by all engineers to reliably deploy services}
         \project{Integrated the on-premises data center VMs and \semibold{Kubernetes} cluster networking into a fully private and connected service mesh}
-        \project{Developed best practices for running applications in \semibold{Kubernetes} including templating, secrets handling, deployment automation, and networking for ingresses and services}
+        % \project{Developed best practices for running applications in \semibold{Kubernetes} including templating, secrets handling, deployment automation, and networking for ingresses and services}
         \project{Led an organizational effort to upgrade the \semibold{Ansible} inventory and infrastructure across all infrastructure teams}
         % \project{Developed a standardized documentation tool for all teams to use that converted markdown to Confluence as a \semibold{Drone} plugin}
         \project{Documented and maintained a standardized RFC/Design Doc process at Squarespace}
         % \project{Re-engineered the local developer experience for product teams into an automated set up process with \semibold{Ansible}}
     \end{projects}
-    \job{Senior DevOps Engineer}{Nead Werx, Inc.}{Atlanta, GA}{Dec 2016}{Jan 2018}
-    \begin{projects}
-        % \project{Architected, diagrammed, and implemented our product's network infrastructure for \semibold{AWS} and coordinated the move of our willing customers}
-        \project{Orchestrated and administered 25+ \semibold{CentOS Linux} servers across different cloud environments}
-        \project{Designed and implemented a fully autonomous scheduling system which replaces application level cronjobs and includes verbose error handling and debugging using \semibold{Perl}}
-        % \project{Redesigned and implemented full systems into our core product such as Authentication, Session Management, User Messaging, and Asset Management using \semibold{PHP}}
-        % \project{Researched and developed a tool for importing AutoCAD DXF files into our data model using \semibold{Python}}
-        % \project{Researched, orchestrated, and implemented a new \semibold{Git} workflow with a suite of commit hooks and ``the G script'' using \semibold{Bash}}
-        % \project{Implemented and integrated services internally including \semibold{Datadog}, \semibold{Pagerduty}, \semibold{Lucidchart}, and \semibold{JIRA}}
-        % \project{Developed a series of developer automation scripts, crons, and tools using \semibold{Ruby}}
-        % \project{Built a home grown build tool system for our internal product using \semibold{Perl}}
-        % \project{Researched and implemented a ``standard profile'' for developers' tools including \semibold{vim}, \semibold{bash}, and \semibold{git} using \semibold{Puppet}}
-        % \project{Created a set of coding standards and integrated them into our commit and deploy process for \semibold{PHP}, \semibold{Perl}, and \semibold{Javascript}}
-        % \project{Developed multiple crons to help automate \semibold{JIRA}, \semibold{Git}, and Tempo Timesheets workflows \semibold{using} Perl}
-        \project{Developed various cronjobs and system scripts for developers including reminders, cli tools, and site-reliability jobs \semibold{using} Bash}
-        % \project{Researched and implemented a \semibold{SAML} based authentication system for our product using \semibold{PHP}}
-    \end{projects}
+    % \job{Senior DevOps Engineer}{Nead Werx, Inc.}{Atlanta, GA}{Dec 2016}{Jan 2018}
+    % \begin{projects}
+    %     % \project{Architected, diagrammed, and implemented our product's network infrastructure for \semibold{AWS} and coordinated the move of our willing customers}
+    %     \project{Orchestrated and administered 25+ \semibold{CentOS Linux} servers across different cloud environments}
+    %     \project{Designed and implemented a fully autonomous scheduling system which replaces application level cronjobs and includes verbose error handling and debugging using \semibold{Perl}}
+    %     % \project{Redesigned and implemented full systems into our core product such as Authentication, Session Management, User Messaging, and Asset Management using \semibold{PHP}}
+    %     % \project{Researched and developed a tool for importing AutoCAD DXF files into our data model using \semibold{Python}}
+    %     % \project{Researched, orchestrated, and implemented a new \semibold{Git} workflow with a suite of commit hooks and ``the G script'' using \semibold{Bash}}
+    %     % \project{Implemented and integrated services internally including \semibold{Datadog}, \semibold{Pagerduty}, \semibold{Lucidchart}, and \semibold{JIRA}}
+    %     % \project{Developed a series of developer automation scripts, crons, and tools using \semibold{Ruby}}
+    %     % \project{Built a home grown build tool system for our internal product using \semibold{Perl}}
+    %     % \project{Researched and implemented a ``standard profile'' for developers' tools including \semibold{vim}, \semibold{bash}, and \semibold{git} using \semibold{Puppet}}
+    %     % \project{Created a set of coding standards and integrated them into our commit and deploy process for \semibold{PHP}, \semibold{Perl}, and \semibold{Javascript}}
+    %     % \project{Developed multiple crons to help automate \semibold{JIRA}, \semibold{Git}, and Tempo Timesheets workflows \semibold{using} Perl}
+    %     \project{Developed various cronjobs and system scripts for developers including reminders, cli tools, and site-reliability jobs \semibold{using} Bash}
+    %     % \project{Researched and implemented a \semibold{SAML} based authentication system for our product using \semibold{PHP}}
+    % \end{projects}
     % \job{Systems Engineer}{Nead Werx, Inc.}{Atlanta, GA}{May 2014}{Dec 2016}
     % \begin{projects}
     %     % \project{Built a home grown build tool system for our internal product using \semibold{Perl}}
@@ -154,10 +164,11 @@
 
 \section{Honors, Awards, Certifications, \& Community Engagement}
 \begin{awards}
-    \award{Kubernetes End-User Panelist}{Kubecon NA}{2021}
-    \award{Red Hat Certified System Administrator}{RHEL 7}{2015}
+    \award{Talk: Kubernetes Graceful Termination}{SRECon}{2024}
     \award{AWS Certified}{Developer Associate}{2017}
-    %\award{Red Hat Certified Engineer}{RHEL 7}{2015}
+    \award{Red Hat Certified System Administrator}{RHEL 7}{2015}
+    \award{Kubernetes End-User Panelist}{Kubecon NA}{2021}
+    \award{Red Hat Certified Engineer}{RHEL 7}{2015}
     \award{Eagle Scout Award}{BSA Highest Honor}{2010}
 \end{awards}
 
